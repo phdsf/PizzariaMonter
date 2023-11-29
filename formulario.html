@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="projeto.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link rel="shortcut icon" href="PIZZARIA MONTER.png" type="image/x-icon" />
+    <title>Formulário</title>
+</head>
+
+<body>
+    <header class="content">
+        <div class="logo">
+            <img src="PIZZARIA MONTER.png " >
+            <h3>PIZZARIA MONTER</h3>
+        </div>
+        <nav>
+            <ul class="list-menu">
+                <li><a href="indexcardapio.html">Cardápio</a></li>
+                <li><a href="indexcontatos.html">Contatos</a></li>
+                <li><a href="indexsobrenos.html">Sobre nós</a></li>
+                <li><a href="indexcriadores.html">Criadores</a></li>
+                <li><a href="indexinstragram.html"><i class="bi bi-instagram"></i></a></li>
+                <li><a href="indexcontatos.html"><i class="bi bi-telephone-fill"></i></a></li>
+                <li><a href="indexcardapio.html"><i class="bi bi-cart4"></i></a></li>
+            </ul> 
+        </nav>
+        </header>
+        <div class="container-form">
+            <div class="form-image">
+                <img src="assets/img//undraw_shopping_re_3wst.svg" alt="">
+            </div>
+            <div class="form">
+                <form action="#">
+                    <div class="form-header">
+                        <div class="title">
+                            <h1>Fazer Pedido</h1>
+                            <div class="gender-inputs">
+                                <div class="gender-title">
+                                    <h3>Qual Sabores:</h3>
+                                </div>
+            
+                                <div class="gender-group">
+                                    <div class="gender-input">
+                                        <input class="limit" type="checkbox" />
+                                        <label for="female">Queijo</label> <br>
+                                    
+                                        <input class="limit" type="checkbox" />
+                                        <label for="male">Calabresa</label><br>
+                                    
+                                        <input class="limit" type="checkbox" />
+                                        <label for="others">Portuguesa</label><br>
+                                  
+                                        <input class="limit" type="checkbox" />
+                                        <label for="none">Bacon</label><br>
+                                    
+                                        <input class="limit" type="checkbox" />
+                                        <label for="none">Frango</label><br>
+                               
+                                        <input class="limit" type="checkbox" />
+                                        <label for="scales">Muçarela</label><br>
+                            
+                                        <input class="limit" type="checkbox" />
+                                        <label for="scales">Calabresa com cebola</label><br>
+                         
+                                        <input class="limit" type="checkbox" />
+                                        <label for="none">Napoletana</label><br>
+                    
+                                        <input class="limit" type="checkbox" />
+                                        <label for="none">Carne</label><br>
+                                </div>
+                 <div class="gender-title">
+                    <h3>tamanho da pizza:</h3>
+                </div>
+
+                <div class="gender-group">
+                    <div class="gender-input">
+                        <input id="female" type="radio" name="gender">
+                        <label for="female">(P) 6 fatias</label>
+                    </div>
+
+                    <div class="gender-input">
+                        <input id="male" type="radio" name="gender">
+                        <label for="male"> (M) 8 fatias</label>
+                    </div>
+
+                    <div class="gender-input">
+                        <input id="others" type="radio" name="gender">
+                        <label for="others">(G) 12 Fatias</label>
+                    </div>
+
+                    <div class="gender-input">
+                        <input id="none" type="radio" name="gender">
+                        <label for="none">(GG) 16 Fatias</label>
+                    </div>
+
+                  <div class="input-box">
+                    <label for="email">enderço:</label>
+                   <input id="email" type="email" name="email" placeholder="Digite seu endereço" >
+        </form>
+        <div class="input-greoup">
+            <div class="input-box">
+                <label for="firstname">horário da  Reserva</label>
+               <input id="firstname" type="time" name="hora" placeholder="hora da Reserva" >
+               <div class="login-button">
+              </div>
+                
+            </div>
+            </form>
+        </div>
+        <button class="botao-Enviar"><a href="resposta dorm.html">Enviar Pedido</a></button>
+    </div>
+</div>
+<button class="botao-voltar"><a href="index.html">Página Principal</a></button>
+<button class="botao-voltar"><a href="indexcardapio.html">Voltar ao Cardápio</a></button>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+ <script>
+   $(function(){
+  var MAX_SELECT = 4; // Máximo de 'input' selecionados
+  
+  $('input.limit').on('change', function(){
+    if( $(this).siblings(':checked').length >= MAX_SELECT ){
+       this.checked = false;
+    }
+  });
+});
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+</body>
+</html>
